@@ -2,6 +2,85 @@
     height: 100vh;
     width: 100vw;
     display: flex;
+}
+.explore__left{
     position: relative;
-    background-color: red;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.explore__left__body{
+    width: 70%;
+}
+.explore__left__body > h1{
+    font-weight: 500;
+    color: #3F3D56;
+}
+.explore__left__button{
+    padding: 10px 30px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 50px;
+    width: fit-content;
+    color: #FFCE4E;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.explore__left__button:hover{
+    transition: all 0.3s ease-in-out;
+    background-color: #FFCE4E;
+    color: #fff;
+}
+.explore__left__img{
+    width: 70%;
+    position: absolute;
+    display: flex;
+    top: 18%;
+    left: 10%;
+    z-index: -1;
+}
+.bubble-one{
+    object-fit: contain;
+    width: 40%;
+    margin-bottom: 250px;
+    margin-right: -30px;
+    animation: one 4s infinite;
+}
+.bubble-two{
+    object-fit: contain;
+    width: 20%;
+    margin-bottom: 150px;
+    animation: two 6s infinite;
+}
+.bubble-three{
+    object-fit: contain;
+    width: 10%;
+}
+@keyframes one{
+    0%{
+        width: 37%;
+    }
+    50%{
+        width: 40%;
+    }
+    100%{
+        width: 37%;
+    }
+}
+@keyframes two{
+    0%{
+        width: 15%;
+    }
+    50%{
+        width: 20%;
+    }
+    100%{
+        width: 15%;
+    }
+}
+
+.explore__right{
+    flex: 1;
 }
