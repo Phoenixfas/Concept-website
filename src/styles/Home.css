@@ -1,11 +1,14 @@
+.home {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+}
+
+
 /* //////////////// NAV ///////////////// */
 
 
-.container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-}
 .nav{
     position: absolute;
     top: 0;
@@ -70,12 +73,29 @@
 
 .home__left{
     flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.home__left__img{
+    width: 90%;
+    position: absolute;
+    right: -20%;
 }
 .home__right{
     flex: 1;
     background-color: #FFCE4E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
+.home__right > h1{
+    width: 400px;
+    letter-spacing: 3px;
+    color: #fff;
+}
 
 /* 
 #FFCE4E

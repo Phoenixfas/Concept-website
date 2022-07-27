@@ -1,8 +1,26 @@
 import "../styles/Home.css";
+import Map from "../images/Map.png";
+import { motion } from "framer-motion";
+
+const variants = {
+  initial: {
+    opacity: 0,
+    y: -50,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.3,
+      duration: 2,
+      type: "spring",
+    },
+  },
+};
 
 export default function Home() {
   return (
-    <div className="container" id="home">
+    <div className="home" id="home">
       <div className="nav">
         <div className="nav__left">
           <span>AFRIOPIA</span>
@@ -19,8 +37,19 @@ export default function Home() {
           <div className="nav__right__btn">Download</div>
         </div>
       </div>
-      <div className="home__left"></div>
-      <div className="home__right"></div>
+      <div className="home__left">
+        <motion.img
+          variants={variants}
+          initial={"initial"}
+          animate={"animate"}
+          src={Map}
+          alt="map"
+          className="home__left__img"
+        />
+      </div>
+      <div className="home__right">
+        <h1>Connecting Africa With The World With One Click</h1>
+      </div>
     </div>
   );
 }

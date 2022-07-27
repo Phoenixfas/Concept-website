@@ -1,4 +1,11 @@
-.scroll__element{
-    width: 100vw;
+.container{
     height: 100vh;
+    width: 100vw;
+  scroll-snap-type: y mandatory;
+    scroll-snap-points-y: repeat(100%);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.scroll__element{
+    scroll-snap-align: start;
 }
