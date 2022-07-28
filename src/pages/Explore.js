@@ -1,9 +1,33 @@
+import React, { useEffect, useRef } from "react";
+import { useAnimation, motion, useInView } from "framer-motion";
 import "../styles/Explore.css";
 import BubbleOne from "../images/Bubble_1.png";
 import BubbleTwo from "../images/Bubble_2.png";
 import BubbleThree from "../images/Bubble_3.png";
+import Pc from "../images/Pc.png";
+
+const headerVar = {
+  initial: {
+    width: null,
+  },
+  animate: {
+    width: "30%",
+    transition: {
+      duration: 10,
+    },
+  },
+};
 
 export default function Explore() {
+  const controls = useAnimation();
+  const ref = useRef(null);
+  const inView = useInView(ref);
+  useEffect(() => {
+    if (inView) {
+      controls.start("animate");
+      console.log("inView");
+    }
+  }, [controls, inView]);
   return (
     <div className="explore">
       <div className="explore__left">
@@ -20,7 +44,18 @@ export default function Explore() {
           <div className="explore__left__button">Download</div>
         </div>
       </div>
-      <div className="explore__right">Right</div>
+      <div className="explore__right">
+        <motion.div
+          ref={ref}
+          variants={headerVar}
+          initial={"initial"}
+          animate={controls}
+          className="explore__right__title"
+        >
+          <h1>Explore</h1>
+        </motion.div>
+        <img src={Pc} alt="Pc" className="explore__right__img" />
+      </div>
     </div>
   );
 }

@@ -83,4 +83,24 @@
 
 .explore__right{
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+    position: relative;
+}
+.explore__right__title{
+    align-self: flex-end;
+    color: #FFCE4E;
+    border-bottom: #FFCE4E solid 5px;
+    text-align: right;
+}
+.explore__right__title > h1{
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.explore__right__img{
+    align-self: center;
+    width: 70%;
+    position: absolute;
+    top: 30%;
 }
