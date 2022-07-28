@@ -1,0 +1,193 @@
+.trending {
+    height: 100vh;
+    width: 100vw;
+    background-color: #FFCE4E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.trending__header{
+    color: #fff;
+    border-bottom: #fff solid 5px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 130px;
+    position: absolute;
+    top: 0;
+}
+.trending__header > h1{
+    margin-bottom: 0;
+    font-weight: 500;
+}
+.trending__slideContainer {
+    width: 90%;
+    height: 60%;
+    background-color: #fff;
+    border-radius: 40px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1;
+}
+.image-slider{
+    height: 300px;
+    position: relative;
+    left: -50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .7s;
+}
+.slides-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 30px;
+}
+.img{
+    position: relative;
+    width: 200px;
+    height: 120px;
+    transition: .5s;
+    filter: saturate(10%);
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.5);
+}
+.button{
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    transition: .5s;
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: 20px;
+}
+.button:hover{
+    background-color: rgba(0, 0, 0, .2);
+}
+.text{
+    text-align: center;
+    color: #3F3D56;
+    font-weight: 500;
+    font-size: 12px;
+    transition: .5s;
+}
+
+
+#slider-span1:target ~ .image-slider #img1{
+    width: 350px;
+    height: 250px;
+    filter: saturate(100%);
+}
+#slider-span1:target ~ .image-slider #button-1{
+    width: 350px;
+    height: 250px;
+    background-color: transparent;
+}
+#slider-span1:target ~ .image-slider #text-1{
+    font-size: 18px;
+}
+
+
+#slider-span2:target ~ .image-slider #img2{
+    width: 350px;
+    height: 250px;
+    filter: saturate(100%);
+}
+#slider-span2:target ~ .image-slider #button-2{
+    width: 350px;
+    height: 250px;
+    background-color: transparent;
+}
+#slider-span2:target ~ .image-slider #text-2{
+    font-size: 18px;
+}
+
+
+#slider-span3:target ~ .image-slider #img3{
+    width: 350px;
+    height: 250px;
+    filter: saturate(100%);
+}
+#slider-span3:target ~ .image-slider #button-3{
+    width: 350px;
+    height: 250px;
+    background-color: transparent;
+}
+#slider-span3:target ~ .image-slider #text-3{
+    font-size: 18px;
+}
+
+
+#slider-span4:target ~ .image-slider #img4{
+    width: 350px;
+    height: 250px;
+    filter: saturate(100%);
+}
+#slider-span4:target ~ .image-slider #button-4{
+    width: 350px;
+    height: 250px;
+    background-color: transparent;
+}
+#slider-span4:target ~ .image-slider #text-4{
+    font-size: 18px;
+}
+
+
+#slider-span5:target ~ .image-slider #img5{
+    width: 350px;
+    height: 250px;
+    filter: saturate(100%);
+}
+#slider-span5:target ~ .image-slider #button-5{
+    width: 350px;
+    height: 250px;
+    background-color: transparent;
+}
+#slider-span5:target ~ .image-slider #text-5{
+    font-size: 18px;
+}
+
+
+#slider-span6:target ~ .image-slider #img6{
+    width: 350px;
+    height: 250px;
+    filter: saturate(100%);
+}
+#slider-span6:target ~ .image-slider #button-6{
+    width: 350px;
+    height: 250px;
+    background-color: transparent;
+}
+#slider-span6:target ~ .image-slider #text-6{
+    font-size: 18px;
+}
+
+
+#slider-span7:target ~ .image-slider #img7{
+    width: 350px;
+    height: 250px;
+    filter: saturate(100%);
+}
+#slider-span7:target ~ .image-slider #button-7{
+    width: 350px;
+    height: 250px;
+    background-color: transparent;
+}
+#slider-span7:target ~ .image-slider #text-7{
+    font-size: 18px;
+}
+
+/*   image position   */
+
+#slider-span1:target ~ .image-slider{left: 30%;}
+#slider-span2:target ~ .image-slider{left: 10%;}
+#slider-span3:target ~ .image-slider{left: 0%;}
+#slider-span4:target ~ .image-slider{left: -10%;}
+#slider-span5:target ~ .image-slider{left: -30%;}
+#slider-span6:target ~ .image-slider{left: -50%;}
+#slider-span7:target ~ .image-slider{left: -90%;}

@@ -93,6 +93,7 @@
     color: #FFCE4E;
     border-bottom: #FFCE4E solid 5px;
     text-align: right;
+    margin-right: 80px;
 }
 .explore__right__title > h1{
     font-weight: 500;

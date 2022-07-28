@@ -1,6 +1,7 @@
 import "./styles/App.css";
 import Home from "./pages/Home";
 import Explore from "./pages/Explore";
+import Trending from "./pages/Trending";
 
 function App() {
   return (
@@ -10,6 +11,9 @@ function App() {
       </div>
       <div className="scroll__element">
         <Explore />
+      </div>
+      <div className="scroll__element">
+        <Trending />
       </div>
     </div>
   );

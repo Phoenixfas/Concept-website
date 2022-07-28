@@ -5,6 +5,7 @@
     scroll-snap-points-y: repeat(100%);
     overflow-y: auto;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 .scroll__element{
     scroll-snap-align: start;

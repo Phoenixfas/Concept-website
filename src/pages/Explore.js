@@ -25,11 +25,10 @@ export default function Explore() {
   useEffect(() => {
     if (inView) {
       controls.start("animate");
-      console.log("inView");
     }
   }, [controls, inView]);
   return (
-    <div className="explore">
+    <div className="explore" id="explore">
       <div className="explore__left">
         <div className="explore__left__img">
           <img src={BubbleOne} alt="Bubble One" className="bubble-one" />

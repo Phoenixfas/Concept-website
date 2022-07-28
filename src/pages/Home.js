@@ -31,7 +31,7 @@ export default function Home() {
               Home
             </a>
             <a href="#explore">Explore</a>
-            <a href="#tranding">Trending</a>
+            <a href="#trending">Trending</a>
             <a href="#contact">Contact</a>
           </div>
           <div className="nav__right__btn">Download</div>
